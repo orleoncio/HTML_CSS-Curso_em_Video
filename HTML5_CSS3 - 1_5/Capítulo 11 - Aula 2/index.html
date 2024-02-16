@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Mídias em HTML5</h1>
+    <h2>Imagem Dinâmica</h2>
+    <p>
+        Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 520px)" srcset="Imagens/github-m.png" type="image/png">
+        <source media="(max-width: 880px)" srcset="Imagens/github-g.png" type="image/png">
+        <img src="Imagens/github-gg.png" alt="Imagem Grande">
+    </picture>
+
+    <h2>Reproduzindo Áudio</h2>
+    <p>
+        Vamos aprender a reproduzir áudios em HTML5.
+    </p>
+    <audio preload="auto" controls loop>
+        <source src="midias/Woodshedder - Quincas Moreira.mp3" type="audio/mpeg">
+        <source src="midias/Woodshedder - Quincas Moreira.ogv" type="audio/ogg">
+        <source src="midias/Woodshedder - Quincas Moreira.wav" type="audio/wav">
+        <p>
+            Infelizmente seu navegador não consegue reproduzir áudio. <a href="midias/Woodshedder - Quincas Moreira.mp3">Clique aqui para baixar o auqivo MP3</a>
+        </p>
+    </audio>
+    <p>
+        Infelizmente seu navegador não consegue reproduzir áudio. <a href="midias/Woodshedder - Quincas Moreira.mp3" download="Woodshedder - Quincas Moreira.mp3" type="audio/mpeg">Clique aqui para baixar o auqivo MP3</a>
+    </p>
+</body>
+</html>
