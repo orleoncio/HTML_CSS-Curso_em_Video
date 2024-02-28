@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url(fontes/idroid.otf) format('opentype');
+}
+
+body {
+    background-color: rgba(108, 218, 108, 0.829);
+}
+
+header {
+    background-color: rgb(8, 105, 8);
+    padding: 10px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+}
+
+#conteudo{
+    background-color: white;
+    margin: 10px 100px;
+    padding: 10px 0px 0px 0px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+h1 {
+    font-family: 'idroid';
+    color: green;
+    margin: 0px 10px;
+}
+
+h2 {
+    font-family: 'idroid';
+    color: green;
+    background-color: rgba(96, 212, 96, 0.527);
+    padding: 0px 10px;
+    margin: 0px 15px;
+    width: 500px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+    text-align: justify;
+    margin: 16px 10px;
+    text-indent: 1.5em;
+    line-height: 1.5em;
+}
+
+#aprender-mais {
+    background-color: rgba(142, 238, 142, 0.623);
+    margin: 15px;
+    border-radius: 10px;
+}
+
+h3 {
+    background-color: rgb(65, 138, 65);
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1em;
+}
+
+#fim-aprender-mais {
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: rgb(13, 95, 13);
+}
