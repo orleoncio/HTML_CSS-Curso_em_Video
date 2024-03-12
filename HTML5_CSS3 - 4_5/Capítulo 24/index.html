@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        div {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulario</h1>
+    <form action="cadastro.js" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados</legend>
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="3" placeholder="nome" autocomplete="name">
+            </div>
+            <div>
+                <label for="isobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="isobrenome" required minlength="3" placeholder="sobrenome">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="imedia">Média:</label>
+                <input type="number" name="media" id="imedia" required placeholder="0 a 10" min="0" max="10" step="0.1" value="5">
+            </div>
+            <div>
+                <label for="iperiodo">Periodo Letivo:</label>
+                <input type="month" name="periodo" id="iperiodo" required value="2024-03">
+            </div>
+            <div>
+                <label for="idia">Dia da prova:</label>
+                <input type="date" name="dia" id="idia" required value="2024-03-11">
+            </div>
+            <div>
+                <label for="ihora">Hora da prova:</label>
+                <input type="time" name="hora" id="ihora" required value="21:53">
+            </div>
+        </fieldset>
+        <fieldset>
+            <div>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </div>
+            <div>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" required placeholder="(xx) xxxxx-xxxx">
+            </div>
+            <!--Pesquisar sobre pattern para input:tel e input:email-->
+        </fieldset>
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="ismas"><label for="ismas">Masculino</label><br>
+            <label for="isfem">Feminino</label>
+            <input type="radio" name="sexo" id="isfem">
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="espbas" id="iespbas" checked><label for="iespbas">Basquete</label><br>
+            <input type="checkbox" name="espfut" id="iespfut" checked><label for="iespfut">Futebol</label><br>
+            <label for="iespnat">Natação</label><input type="checkbox" name="espnat" id="iespnat"><br>
+            <label for="iespten">Tenis</label><input type="checkbox" name="espten" id="iespten"><br>
+        </fieldset>
+        <div>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" placeholder="senha">
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
