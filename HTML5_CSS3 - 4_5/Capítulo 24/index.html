@@ -66,6 +66,35 @@
             <label for="iespnat">Natação</label><input type="checkbox" name="espnat" id="iespnat"><br>
             <label for="iespten">Tenis</label><input type="checkbox" name="espten" id="iespten"><br>
         </fieldset>
+        <fieldset>
+            <div>
+                <legend>listas</legend>
+                <label for="iest">Estado:</label>
+                <select name="est" id="iest">
+                    <optgroup label="Estados">
+                        <option value="CE">Ceara</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="iprof">Profissão</label>
+                <input type="text" name="prof" id="iprof" list="listprof">
+                <datalist id="listprof">
+                    <option value="ADM">Adiministração</option>
+                    <option value="MED">Medicina</option>
+                    <option>Engenharia</option>
+                    <option>Desenvolvedor</option>
+                </datalist>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Range</legend>
+            <label for="ival">Valor:</label>
+            <input type="range" name="val" id="ival" min="0" max="10" value="5" oninput="num.innerHTML = Number(ival.value)">
+            <output id="num">0</output>
+        </fieldset>
         <div>
             <label for="isenha">Senha:</label>
             <input type="password" name="senha" id="isenha" required minlength="8" placeholder="senha">
